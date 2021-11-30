@@ -12,3 +12,5 @@ num_trainings: 4, num_epochs: 200, batchsize: 64, fair_epochs:30, lamda:0.500000
 train_idx ,accuracy_original, accuracy_generated, difference_accuracy, f1_original, f1_generated, difference_f1, demographic_parity_data, demographic_parity_classifier, roc_threshold, nu
 num_trainings: 4, num_epochs: 200, batchsize: 64, fair_epochs:30, lamda:0.500000, nu:0.100000
 train_idx ,accuracy_original, accuracy_generated, difference_accuracy, f1_original, f1_generated, difference_f1, demographic_parity_data, demographic_parity_classifier, roc_threshold, nu
+num_trainings: 4, num_epochs: 5, batchsize: 64, fair_epochs:2, lamda:0.500000, nu:0.100000
+train_idx ,accuracy_original, accuracy_generated, difference_accuracy, f1_original, f1_generated, difference_f1, demographic_parity_data, demographic_parity_classifier, roc_threshold, nu

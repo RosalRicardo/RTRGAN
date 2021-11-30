@@ -18,9 +18,9 @@ from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
 import time
 
-epochs = 200
+epochs = 5
 batch_size = 64
-fair_epochs = 30
+fair_epochs = 2
 lamda = 0.5
 nu = 0.5
 test_path = '../tests/mdr/'
