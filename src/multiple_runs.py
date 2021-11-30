@@ -12,6 +12,8 @@ import print2file
 import train_plot
 import get_original_data
 
+device = torch.device("cuda:0" if (torch.cuda.is_available() and 1 > 0) else "cpu")
+
 def multiple_runs(num_trainings, df, epochs, batchsize, fair_epochs, lamda, nu, test_path, fake_name, outFile, S, Y, S_under, Y_desire):
     print(lamda)
     for i in range(num_trainings):
@@ -89,9 +91,9 @@ def multiple_runs(num_trainings, df, epochs, batchsize, fair_epochs, lamda, nu, 
         demographic_parity_data, demographic_parity_classifier, thresholds[0], nu)
         
         critic_losses = pd.DataFrame(critic_losses)
-        critic_losses.to_csv(test_path + 'critic_losses_WGAN_mdr_nu' + nu + '_'+str(i)+'.csv',index=False)
+        critic_losses.to_csv(test_path + 'critic_losses_WGAN_mdr_nu' + str(nu) + '_'+str(i)+'.csv',index=False)
         gen_losses = pd.DataFrame(gen_losses)
-        gen_losses.to_csv(test_path + 'gen_losses_WGAN_mdr_nu' + nu + '_'+str(i)+'.csv',index=False)
+        gen_losses.to_csv(test_path + 'gen_losses_WGAN_mdr_nu' + str(nu) + '_'+str(i)+'.csv',index=False)
         roc_curve.to_csv(test_path + 'roc_nu01_'+str(i)+'.csv')
 
         # classificador para calculo da curva ROC (dados falsos)
@@ -99,7 +101,7 @@ def multiple_runs(num_trainings, df, epochs, batchsize, fair_epochs, lamda, nu, 
         fake_df = get_original_data.get_original_data(df_generated, df, ohe, scaler)
         fake_df = fake_df[df.columns]
         fake_df['predict'] = clf.predict(df_generated_x)
-        fake_df.to_csv(teste_path + fake_name + nu + '_'+str(i)+'.csv', index=False)
+        fake_df.to_csv(test_path + fake_name + str(nu) + '_'+str(i)+'.csv', index=False)
 
         print(buf)
-        print2file(buf, outFile)
+        print2file.print2file(buf, outFile)
