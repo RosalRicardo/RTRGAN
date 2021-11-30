@@ -1,3 +1,6 @@
+import pandas as pd
+import numpy as np
+
 def get_original_data(df_transformed, df_orig, ohe, scaler):
     # df_int = df_orig.select_dtypes(['float','integer'])
     df_ohe_int = df_transformed[:, :df_orig.select_dtypes(['float', 'integer']).shape[1]]
