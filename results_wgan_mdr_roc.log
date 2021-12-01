@@ -29,3 +29,33 @@ train_idx ,accuracy_original, accuracy_generated, difference_accuracy, f1_origin
 num_trainings: 4, num_epochs: 2, batchsize: 64, fair_epochs:1, lamda:0.500000, nu:0.100000
 train_idx ,accuracy_original, accuracy_generated, difference_accuracy, f1_original, f1_generated, difference_f1, demographic_parity_data, demographic_parity_classifier, roc_threshold, nu
 0, 0.819038, 0.567861 , 0.251177, 0.627319, 0.316607, 0.310711, -0.006164, -0.084093, 2.000000, 0.100000
+num_trainings: 4, num_epochs: 200, batchsize: 64, fair_epochs:30, lamda:0.500000, nu:0.100000
+train_idx ,accuracy_original, accuracy_generated, difference_accuracy, f1_original, f1_generated, difference_f1, demographic_parity_data, demographic_parity_classifier, roc_threshold, nu
+num_trainings: 4, num_epochs: 200, batchsize: 64, fair_epochs:30, lamda:0.500000, nu:0.100000
+train_idx ,accuracy_original, accuracy_generated, difference_accuracy, f1_original, f1_generated, difference_f1, demographic_parity_data, demographic_parity_classifier, roc_threshold, nu
+0, 0.815558, 0.521597 , 0.293961, 0.615122, 0.129609, 0.485513, 0.897222, 0.903791, 2.000000, 0.100000
+1, 0.822723, 0.512590 , 0.310133, 0.634599, 0.141982, 0.492617, 0.908590, 0.923128, 2.000000, 0.100000
+2, 0.805118, 0.532242 , 0.272876, 0.612378, 0.183053, 0.429325, 0.874340, 0.858528, 2.000000, 0.100000
+3, 0.804913, 0.534289 , 0.270624, 0.607010, 0.165750, 0.441260, 0.876925, 0.840870, 2.000000, 0.100000
+num_trainings: 4, num_epochs: 200, batchsize: 64, fair_epochs:30, lamda:0.500000, nu:0.500000
+train_idx ,accuracy_original, accuracy_generated, difference_accuracy, f1_original, f1_generated, difference_f1, demographic_parity_data, demographic_parity_classifier, roc_threshold, nu
+0, 0.822723, 0.563562 , 0.259161, 0.630231, 0.178103, 0.452127, 0.847027, 0.771101, 2.000000, 0.500000
+1, 0.822927, 0.523030 , 0.299898, 0.631758, 0.145268, 0.486490, 0.870367, 0.861496, 2.000000, 0.500000
+2, 0.823541, 0.545548 , 0.277994, 0.633503, 0.178386, 0.455117, 0.887640, 0.836038, 2.000000, 0.500000
+3, 0.813306, 0.529785 , 0.283521, 0.617128, 0.138733, 0.478396, 0.879060, 0.841449, 2.000000, 0.500000
+num_trainings: 4, num_epochs: 200, batchsize: 64, fair_epochs:30, lamda:0.500000, nu:0.300000
+train_idx ,accuracy_original, accuracy_generated, difference_accuracy, f1_original, f1_generated, difference_f1, demographic_parity_data, demographic_parity_classifier, roc_threshold, nu
+0, 0.816172, 0.542477 , 0.273695, 0.623322, 0.186385, 0.436937, 0.871076, 0.831951, 2.000000, 0.300000
+1, 0.813715, 0.557011 , 0.256704, 0.611775, 0.204412, 0.407363, 0.866660, 0.813865, 2.000000, 0.300000
+2, 0.806141, 0.540020 , 0.266121, 0.613942, 0.179628, 0.434315, 0.864356, 0.867200, 2.000000, 0.300000
+3, 0.824770, 0.524463 , 0.300307, 0.637595, 0.145642, 0.491953, 0.889926, 0.893997, 2.000000, 0.300000
+num_trainings: 4, num_epochs: 200, batchsize: 64, fair_epochs:30, lamda:0.500000, nu:0.000000
+train_idx ,accuracy_original, accuracy_generated, difference_accuracy, f1_original, f1_generated, difference_f1, demographic_parity_data, demographic_parity_classifier, roc_threshold, nu
+0, 0.820061, 0.575844 , 0.244217, 0.627700, 0.416667, 0.211033, 0.764566, 0.639852, 2.000000, 0.000000
+1, 0.813511, 0.527533 , 0.285977, 0.614799, 0.390707, 0.224092, 0.763595, 0.679784, 2.000000, 0.000000
+2, 0.807574, 0.533060 , 0.274514, 0.597947, 0.371798, 0.226149, 0.761716, 0.711860, 2.000000, 0.000000
+3, 0.811054, 0.530399 , 0.280655, 0.608733, 0.395361, 0.213371, 0.764668, 0.703869, 2.000000, 0.000000
+num_trainings: 4, num_epochs: 200, batchsize: 64, fair_epochs:30, lamda:0.500000, nu:0.000000
+train_idx ,accuracy_original, accuracy_generated, difference_accuracy, f1_original, f1_generated, difference_f1, demographic_parity_data, demographic_parity_classifier, roc_threshold, nu
+num_trainings: 4, num_epochs: 200, batchsize: 64, fair_epochs:30, lamda:0.500000, nu:0.000000
+train_idx ,accuracy_original, accuracy_generated, difference_accuracy, f1_original, f1_generated, difference_f1, demographic_parity_data, demographic_parity_classifier, roc_threshold, nu
