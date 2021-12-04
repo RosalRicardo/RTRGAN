@@ -21,7 +21,7 @@ epochs = 200
 batch_size = 64
 fair_epochs = 30
 lamda = 0.5
-nu = 0
+nu = 0.9
 test_path = 'tests/mdr/'
 fake_name = 'fake_data_wgan_mdr_'
 
