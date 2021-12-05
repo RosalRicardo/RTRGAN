@@ -19,11 +19,11 @@ import time
 
 epochs = 200
 batch_size = 64
-fair_epochs = 30
+fair_epochs = 60
 lamda = 0.5
-nu = 0.9
+nu = 0.7
 test_path = 'tests/mdr/'
-fake_name = 'fake_data_wgan_mdr_'
+fake_name = 'fake_data_3TS_'
 
 size_fake = 1000
 S = "sex"
@@ -37,6 +37,6 @@ df[Y] = df[Y].astype(object)
 
 display_step = 50
 
-outfile = "results_wgan_mdr_roc.log"
+outfile = "results_wgan_mdr_roc_3TS.log"
 multiple_runs.multiple_runs(num_trainings=4, df=df, epochs=epochs, batchsize=batch_size, fair_epochs=fair_epochs, lamda=lamda, nu=nu,
  test_path=test_path,fake_name=fake_name, outFile=outfile, S=S, Y=Y, S_under=S_under, Y_desire=Y_desire)

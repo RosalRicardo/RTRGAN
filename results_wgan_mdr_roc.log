@@ -68,3 +68,6 @@ train_idx ,accuracy_original, accuracy_generated, difference_accuracy, f1_origin
 1, 0.816581, 0.540020 , 0.276561, 0.613793, 0.150473, 0.463321, 0.855493, 0.831108, 2.000000, 0.900000
 2, 0.821494, 0.550461 , 0.271034, 0.632068, 0.198540, 0.433527, 0.861945, 0.819743, 2.000000, 0.900000
 3, 0.814944, 0.561310 , 0.253634, 0.610680, 0.222142, 0.388539, 0.859020, 0.780932, 2.000000, 0.900000
+num_trainings: 4, num_epochs: 200, batchsize: 64, fair_epochs:30, lamda:0.500000, nu:0.500000
+train_idx ,accuracy_original, accuracy_generated, difference_accuracy, f1_original, f1_generated, difference_f1, demographic_parity_data, demographic_parity_classifier, roc_threshold, nu
+0, 0.821494, 0.536336 , 0.285159, 0.630195, 0.162662, 0.467533, 0.866498, 0.837446, 2.000000, 0.500000
