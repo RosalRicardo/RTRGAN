@@ -1,0 +1,42 @@
+num_trainings: 4, num_epochs: 200, batchsize: 64, fair_epochs:30, lamda:0.500000, nu:0.500000
+train_idx ,accuracy_original, accuracy_generated, difference_accuracy, f1_original, f1_generated, difference_f1, demographic_parity_data, demographic_parity_classifier, roc_threshold, nu
+num_trainings: 4, num_epochs: 200, batchsize: 64, fair_epochs:30, lamda:0.500000, nu:0.500000
+train_idx ,accuracy_original, accuracy_generated, difference_accuracy, f1_original, f1_generated, difference_f1, demographic_parity_data, demographic_parity_classifier, roc_threshold, nu
+num_trainings: 4, num_epochs: 200, batchsize: 64, fair_epochs:30, lamda:0.500000, nu:0.500000
+train_idx ,accuracy_original, accuracy_generated, difference_accuracy, f1_original, f1_generated, difference_f1, demographic_parity_data, demographic_parity_classifier, roc_threshold, nu
+num_trainings: 4, num_epochs: 200, batchsize: 64, fair_epochs:30, lamda:0.500000, nu:0.500000
+train_idx ,accuracy_original, accuracy_generated, difference_accuracy, f1_original, f1_generated, difference_f1, demographic_parity_data, demographic_parity_classifier, roc_threshold, nu
+0, 0.818424, 0.513408 , 0.305015, 0.633622, 0.313997, 0.319625, 0.813952, 0.759754, 2.000000, 0.500000
+num_trainings: 4, num_epochs: 200, batchsize: 64, fair_epochs:60, lamda:0.500000, nu:0.500000
+train_idx ,accuracy_original, accuracy_generated, difference_accuracy, f1_original, f1_generated, difference_f1, demographic_parity_data, demographic_parity_classifier, roc_threshold, nu
+0, 0.813920, 0.513204 , 0.300716, 0.624535, 0.333894, 0.290642, 0.804375, 0.782841, 2.000000, 0.500000
+num_trainings: 4, num_epochs: 200, batchsize: 64, fair_epochs:60, lamda:0.500000, nu:0.500000
+train_idx ,accuracy_original, accuracy_generated, difference_accuracy, f1_original, f1_generated, difference_f1, demographic_parity_data, demographic_parity_classifier, roc_threshold, nu
+0, 0.816786, 0.777482 , 0.039304, 0.621884, 0.568480, 0.053405, -0.211621, -0.213526, 2.000000, 0.500000
+1, 0.824156, 0.799386 , 0.024770, 0.639530, 0.584394, 0.055136, -0.161255, -0.178256, 2.000000, 0.500000
+2, 0.811668, 0.774821 , 0.036847, 0.616027, 0.555376, 0.060651, -0.183800, -0.175154, 2.000000, 0.500000
+3, 0.820471, 0.783009 , 0.037462, 0.630426, 0.556856, 0.073569, -0.189379, -0.170598, 2.000000, 0.500000
+num_trainings: 4, num_epochs: 200, batchsize: 64, fair_epochs:60, lamda:0.500000, nu:0.900000
+train_idx ,accuracy_original, accuracy_generated, difference_accuracy, f1_original, f1_generated, difference_f1, demographic_parity_data, demographic_parity_classifier, roc_threshold, nu
+0, 0.805937, 0.772160 , 0.033777, 0.612745, 0.539512, 0.073233, -0.207418, -0.175252, 2.000000, 0.900000
+1, 0.816172, 0.782190 , 0.033982, 0.631363, 0.540984, 0.090379, -0.208552, -0.166493, 2.000000, 0.900000
+2, 0.816786, 0.769703 , 0.047083, 0.620602, 0.536082, 0.084519, -0.173253, -0.140013, 2.000000, 0.900000
+3, 0.825384, 0.789969 , 0.035415, 0.639018, 0.562287, 0.076732, -0.174062, -0.197232, 2.000000, 0.900000
+num_trainings: 4, num_epochs: 200, batchsize: 64, fair_epochs:60, lamda:0.500000, nu:0.100000
+train_idx ,accuracy_original, accuracy_generated, difference_accuracy, f1_original, f1_generated, difference_f1, demographic_parity_data, demographic_parity_classifier, roc_threshold, nu
+0, 0.810440, 0.789355 , 0.021085, 0.620180, 0.558179, 0.062001, -0.181344, -0.177060, 2.000000, 0.100000
+1, 0.822313, 0.804913 , 0.017400, 0.628106, 0.550684, 0.077423, -0.224436, -0.159167, 2.000000, 0.100000
+2, 0.810645, 0.781986 , 0.028659, 0.607552, 0.552709, 0.054843, -0.189418, -0.157817, 2.000000, 0.100000
+3, 0.820880, 0.796111 , 0.024770, 0.631889, 0.573995, 0.057894, -0.199558, -0.178579, 2.000000, 0.100000
+num_trainings: 4, num_epochs: 200, batchsize: 64, fair_epochs:60, lamda:0.500000, nu:0.300000
+train_idx ,accuracy_original, accuracy_generated, difference_accuracy, f1_original, f1_generated, difference_f1, demographic_parity_data, demographic_parity_classifier, roc_threshold, nu
+0, 0.807369, 0.788332 , 0.019038, 0.613870, 0.543689, 0.070180, -0.153330, -0.206902, 2.000000, 0.300000
+1, 0.815967, 0.778301 , 0.037666, 0.627435, 0.558140, 0.069295, -0.156168, -0.187530, 2.000000, 0.300000
+2, 0.817195, 0.786489 , 0.030706, 0.622729, 0.533751, 0.088979, -0.189523, -0.165881, 2.000000, 0.300000
+3, 0.820676, 0.793654 , 0.027021, 0.624034, 0.573604, 0.050430, -0.168085, -0.218882, 2.000000, 0.300000
+num_trainings: 4, num_epochs: 200, batchsize: 64, fair_epochs:60, lamda:0.500000, nu:0.700000
+train_idx ,accuracy_original, accuracy_generated, difference_accuracy, f1_original, f1_generated, difference_f1, demographic_parity_data, demographic_parity_classifier, roc_threshold, nu
+0, 0.814534, 0.792835 , 0.021699, 0.631107, 0.576569, 0.054538, -0.216873, -0.199542, 2.000000, 0.700000
+1, 0.815558, 0.775026 , 0.040532, 0.602909, 0.517771, 0.085138, -0.202181, -0.170531, 2.000000, 0.700000
+2, 0.815967, 0.789560 , 0.026407, 0.619873, 0.576606, 0.043267, -0.174869, -0.196915, 2.000000, 0.700000
+3, 0.812692, 0.777687 , 0.035005, 0.617315, 0.541772, 0.075543, -0.150975, -0.185838, 2.000000, 0.700000

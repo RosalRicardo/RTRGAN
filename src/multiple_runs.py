@@ -91,10 +91,10 @@ def multiple_runs(num_trainings, df, epochs, batchsize, fair_epochs, lamda, nu, 
         demographic_parity_data, demographic_parity_classifier, thresholds[0], nu)
         
         critic_losses = pd.DataFrame(critic_losses)
-        critic_losses.to_csv(test_path + 'critic_losses_WGAN_mdr_nu' + str(nu) + '_'+str(i)+'.csv',index=False)
+        critic_losses.to_csv(test_path + 'critic_losses_3TS_mdr_nu' + str(nu) + '_'+str(i)+'.csv',index=False)
         gen_losses = pd.DataFrame(gen_losses)
-        gen_losses.to_csv(test_path + 'gen_losses_WGAN_mdr_nu' + str(nu) + '_'+str(i)+'.csv',index=False)
-        roc_curve.to_csv(test_path + 'roc_nu01_'+str(i)+'.csv')
+        gen_losses.to_csv(test_path + 'gen_losses_3TS_mdr_nu' + str(nu) + '_'+str(i)+'.csv',index=False)
+        roc_curve.to_csv(test_path + 'roc_nu01_3TS_'+str(i)+'.csv')
 
         # classificador para calculo da curva ROC (dados falsos)
         #fake_numpy_array = generator(torch.randn(size=(size_fake, input_dim), device=device)).cpu().detach().numpy()
