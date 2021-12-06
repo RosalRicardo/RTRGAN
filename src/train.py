@@ -157,5 +157,10 @@ def train(df, S, Y, S_under, Y_desire, epochs=500, batch_size=64, fair_epochs=10
 	    """
             end = time.time()
             cur_step += 1
+    
+    torch.save(generator.state_dict(), 'src/modelo/generator.pth')
+    torch.save(critic.state_dict(), 'src/modelo/critic.pth')
+    torch.save(second_critic.state_dict(), 'src/modelo/DISPLoss.pth')
+    torch.save(thrid_critic.state_dict(), 'src/modelo/RTRLoss.pth')
 
     return generator, critic, ohe, scaler, data_train, data_test, input_dim, critic_losses, gen_losses

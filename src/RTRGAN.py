@@ -21,9 +21,9 @@ epochs = 200
 batch_size = 64
 fair_epochs = 60
 lamda = 0.5
-nu = 0.7
+nu = 0.5
 test_path = 'tests/mdr/'
-fake_name = 'fake_data_3TS_'
+fake_name = 'fake_data_3TS2x_'
 
 size_fake = 1000
 S = "sex"
