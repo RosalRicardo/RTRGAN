@@ -5,8 +5,8 @@ from get_ohe_data import get_ohe_data
 lista_colunas = ['age', 'fnlwgt', 'education-num', 'capital-gain', 'capital-loss', 'hours-per-week','race','sex','income']
 
 df1 = pd.read_csv('src/adult.csv')
-df2 = pd.read_csv('tests/mdr/fake_data_wgan_mdr_0_0.csv')
-#df2 = pd.read_csv('tests/mdr/fake_data_3TS_0.5_0.csv')
+#df2 = pd.read_csv('tests/mdr/fake_data_wgan_mdr_0_0.csv')
+df2 = pd.read_csv('tests/mdr/fake_data_3TS_0.5_0.csv')
 df2.drop('predict', axis = 1, inplace = True)
 df1 = df1[lista_colunas].head(30000)
 df2 = df2[lista_colunas].head(30000)
@@ -29,4 +29,4 @@ for i in range(15):
     wdist = wasserstein_distance(final_array_1[i],final_array_2[i])
     wdist_feature.append(wdist)
 
-print(np.array(wdist_feature).sum())
+print('soma: ',np.sum(np.array(wdist_feature)),'média: ',np.average(np.array(wdist_feature)))
