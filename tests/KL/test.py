@@ -6,7 +6,8 @@ from get_ohe_data import get_ohe_data
 lista_colunas = ['age', 'fnlwgt', 'education-num', 'capital-gain', 'capital-loss', 'hours-per-week','race','sex','income']
 
 df1 = pd.read_csv('src/adult.csv')
-df2 = pd.read_csv('tests/mdr/fake_data_3TS_0.1_0.csv')
+df2 = pd.read_csv('tests/mdr/fake_data_wgan_mdr_0_0.csv')
+#df2 = pd.read_csv('tests/mdr/fake_data_3TS_0.5_0.csv')
 df2.drop('predict', axis = 1, inplace = True)
 df1 = df1[lista_colunas]
 df2 = df2[lista_colunas]

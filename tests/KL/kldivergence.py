@@ -1,3 +1,6 @@
+# https://mail.python.org/pipermail/scipy-user/2011-May/029521.html
+# https://gist.github.com/atabakd/ed0f7581f8510c8587bc2f41a094b518
+
 import numpy as np
 
 def KLdivergence(x, y):
@@ -42,10 +45,12 @@ Theory, 2008.
   r = xtree.query(x, k=2, eps=.01, p=2)[0][:,1]
   s = ytree.query(x, k=1, eps=.01, p=2)[0]
 
-  print(np.sum(r/s))
+  # resolver divisão por zero
+  
+
   # There is a mistake in the paper. In Eq. 14, the right side misses a negative sign
   # on the first term of the right hand side.
 
   #return -np.log(r/s).sum() * d / n + np.log(m / (n - 1.)) ?
 
-  return -np.log(np.sum(r/s)) * d / n + np.log(m / (n - 1.))
+  return -np.sum(np.log(r/s)) * d / n + np.log(m / (n - 1.))
